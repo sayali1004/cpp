@@ -1,0 +1,31 @@
+#include <iostream>
+#include<stdlib.h>
+#include<stdio.h>
+using namespace std;
+
+//call by value
+
+struct Rectangle {
+    int length;
+    int breadth;
+    
+};
+
+void fun(struct Rectangle r) {
+    
+    r.length=20;
+    cout<<"Length  "<<r.length<<endl;
+    cout<<"Breadth "<<r.breadth<<endl;
+    
+}
+
+
+int main()
+{
+    struct Rectangle r={10,5};
+    fun(r);
+    
+    cout<<"Length  "<<r.length<<endl;
+    cout<<"Breadth "<<r.breadth<<endl;
+    return 0;
+}
